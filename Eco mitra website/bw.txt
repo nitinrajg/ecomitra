@@ -1,0 +1,126 @@
+//css
+:root{
+    --primary-color: #292727;
+    --secondary-color: white;
+    
+}
+.dark-theme{
+    --primary-color: white;
+    --secondary-color: #292727;
+}
+
+//html
+<nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#">CHECK AVAILABILITY</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+          </ul>
+          <img src="images/moon.png" id="icon">
+        </nav>
+
+//js
+
+var icon=document.getElementById("icon");
+
+icon.onclick=function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src="images/sun.png";
+    }
+    else{
+        icon.src="images/moon.png";
+    }
+}
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #20c933;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #20c933;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            background-color: #333;
+            padding: 10px;
+            border-left: 5px solid #20c933;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        ul li strong {
+            color: #20c933;
+        }
+    </style>

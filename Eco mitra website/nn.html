@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .timeline-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-number {
+            font-size: 1.5rem;
+            color: #a0a0a0;
+            margin-right: 15px;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: #a0a0a0;
+            z-index: -1;
+        }
+
+        .timeline-number.active {
+            color: #fff;
+        }
+
+        .timeline-line .highlight {
+            height: 60px;
+            width: 4px;
+            background-color: #e67c26;
+            position: absolute;
+            top: 0;
+            left: -1.5px;
+        }
+
+        .timeline-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .timeline-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensure the image fits within the icon size */
+        }
+
+        .timeline-text {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="timeline-container">
+        <div class="timeline-item">
+            <div class="timeline-number active">01</div>
+            <div class="timeline-line">
+                <div class="highlight"></div>
+            </div>
+            <div class="timeline-icon">
+                <img src="images/01.png" alt="Icon for listing scrap" class="icon" />
+            </div>
+            <div class="timeline-text">list your scrap</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">02</div>
+            <div class="timeline-line"></div>
+            <div class="timeline-icon">
+                <img src="images/02.png" alt="Icon for scheduling pickup" class="icon" />
+            </div>
+            <div class="timeline-text">schedule pickup</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">03</div>
+            <div class="timeline-line"></div>
+            <div class="timeline-icon">
+                <img src="images/03.png" alt="Icon for connecting with pickup partner" class="icon" />
+            </div>
+            <div class="timeline-text">connect with pickup partner</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-number">04</div>
+            <div class="timeline-line"></div>
+            <div class="timeline-icon">
+                <img src="images/04.png" alt="Icon for selling scrap" class="icon" />
+            </div>
+            <div class="timeline-text">sell your scrap</div>
+        </div>
+    </div>
+
+</body>
+</html>

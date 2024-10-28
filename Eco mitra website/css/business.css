@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0c0b0b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 80px;
+    align-items: left;
+}
+
+header {
+    width: 100%;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    background-color: #292727; /* Adjust as needed */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 50px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline: none;
+}
+
+nav ul li a:hover {
+    border-color: #4caf50;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Global Styles */
+
+
+
+/* Link Styling */
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    color: #20c933;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #20c933;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #333;
+    padding: 10px;
+    border-left: 5px solid #20c933;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #20c933;
+}
+
+
+.hero .contact-btn,
+footer .contact-btn {
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.hero .contact-btn:hover,
+footer .contact-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #4caf50;
+    color: #4caf50;
+}
+/* Collaborate with us Button Styles */
+.hero .collaborate-btn,
+footer .collaborate-btn {
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    text-align: left;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .collaborate-btn::before,
+footer .collaborate-btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 23px;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.hero .collaborate-btn:hover::before,
+footer .collaborate-btn:hover::before {
+    border-color: #26B33B;
+}
+
+.hero .collaborate-btn:hover,
+footer .collaborate-btn:hover {
+    color: #26B33B;
+    background-color: rgba(38, 179, 59, 0.1); /* Slight green background */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px; /* Reduced padding for a smaller footer */
+    font-size: 0.9rem; /* Set a specific font size for the footer */
+    /* margin: 0; */ /* Ensure no extra margin */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
