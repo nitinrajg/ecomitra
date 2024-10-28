@@ -72,8 +72,10 @@ h1 {
 }
 
 .quote {
-    font-size: 24px;
-    font-style: italic;
+    font-family: 'Ubuntu', sans-serif; /* Change to Ubuntu font */
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -624,57 +626,67 @@ footer {
 
 /* Add these styles for the new header section */
 
-.about-header {
-  padding: 40px 70px;
-  background-color: #1B281F; /* Dark background to match your theme */
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.about-header-content {
-  max-width: 1190px; /* Match the width of the banner for consistency */
-  margin: 0 auto;
+.about-section {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  max-width: 1200px;
+  padding: 40px;;
+  border-radius: 8px;
+  gap: 30px;
 }
 
-.text-content {
-  flex: 0 0 60%; /* Adjust this value to control the width of the text content */
-}
 
-.about-header h1 {
-  font-size: 50px;
-  margin-bottom: 5px;
-  color: #26B33B; /* Green color to match your theme */
-}
 
-.about-header h2 {
-  font-size: 50px;
-  margin-top: 0;
+.quote {
+  font-family: 'Ubuntu', sans-serif; /* Change to Ubuntu font */;
+  font-size: 53.7px;
+  font-weight: bold;
+  color: #ffffff;
   margin-bottom: 20px;
-  color: #26B33B;
 }
 
-.about-header p {
-  font-size: 18px;
-  max-width: 600px; /* Limit the width of the paragraph for better readability */
+.highlight {
+  color: #00a651;
+}
+
+.description {
+  background-color: #547745;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 700;
   line-height: 1.6;
+  color: #ffffff;
 }
 
-.image-content {
-  flex: 0 0 35%; /* Adjust this value to control the width of the image content */
+.images {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+  max-width: 30%;
 }
 
-.image-content img {
-  width: 100%;
-  height: auto;
+.images img {
   border-radius: 10px;
   object-fit: cover;
 }
+
+.image1 {
+  width: 150px; /* Set specific width for Image 1 */
+  height: 100px; /* Set specific height for Image 1 *//* Optional: Add border radius */
+  
+}
+
+.image2 {
+  width: 230.25px; /* Set specific width for Image 2 */
+  height: 191.21px; /* Set specific height for Image 2 *//* Optional: Add border radius */
+}
+
+.image3 {
+  width: 243.16px; /* Set specific width for Image 3 */
+  height: 183.14px; /* Set specific height for Image 3 */ /* Optional: Add border radius */
+}
+
 
 /* Responsive design for the header */
 @media (max-width: 1200px) {
@@ -789,8 +801,7 @@ footer {
 }
 
 /* Optional: Adjust the banner and footer styles if needed */
-.banner {
-  background-color: #2a8a3e; /* Background color for the banner */
+.banner {/* Background color for the banner */
   padding: 30px; /* Padding inside the banner */
   border-radius: 15px; /* Rounded corners for the banner */
   text-align: center; /* Center the text */
@@ -822,6 +833,7 @@ footer {
 .contact-button a:hover {
   background-color: #1f6930;
 }
+
 
 
 

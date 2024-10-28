@@ -1,0 +1,78 @@
+.about-header {
+  padding: 40px 70px;
+  background-color: #1B281F; /* Dark background to match your theme */
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.about-header-content {
+  max-width: 1190px; /* Match the width of the banner for consistency */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.text-content {
+  flex: 0 0 60%; /* Adjust this value to control the width of the text content */
+}
+
+.about-header h1 {
+  font-size: 50px;
+  margin-bottom: 5px;
+  color: #26B33B; /* Green color to match your theme */
+}
+
+.about-header h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #26B33B;
+}
+
+.about-header p {
+  font-size: 18px;
+  max-width: 600px; /* Limit the width of the paragraph for better readability */
+  line-height: 1.6;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 30%;
+  
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+
+
+
+-----------------------------------------
+
+
+
+
+<section class="about-header">
+    <h1>“Providing Connections,</h1>
+    <h2>Enabling Sustainability.”</h2>
+    <p>Eco Mitra is a digital platform dedicated to connecting individuals, scrap merchants, and large-scale industries for efficient scrap management. Our network allows people and businesses to easily connect with local scrap merchants for hassle-free transactions and pickups. For industries generating bulk scrap, we provide a streamlined solution, linking them with professional aggregators to ensure responsible and sustainable disposal. Together, we're driving a cleaner, more connected future in the recycling industry.</p>
+    <div class="images">
+      <img src="images/abt1.jpg" alt="Meeting 1">
+      <img src="images/abt2.jpg" alt="Meeting 2">
+      <img src="images/abt3.jpg" alt="Meeting 3">
+    </div>
+  </section>
+
+
+
+
+  ---------------------------------------------
